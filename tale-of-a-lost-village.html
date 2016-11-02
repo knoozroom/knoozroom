@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tale of a Lost Village - KnoozRoom</title>
+
+    <meta name="description" CONTENT="There were only 200 of them, and after the lines were drawn there were none. An interactive piece on a village erased by shifting borders in the south of Lebanon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/tale-of-a-lost-village.css">
+    <link rel="stylesheet" type="text/css" href="css/tooltip-classic.css" />
+    <link rel="stylesheet" href="css/jquery.imageReveal.min.css" />
+    <link rel="stylesheet" href="css/easyzoom.css" />
+
+    <link href="fonts/fontello/css/fontello.css" rel="stylesheet">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@knoozroom">
+    <meta name="twitter:creator" content="@knoozroom">
+    <meta name="twitter:title" content="Tale of a Lost Village.">
+    <meta name="twitter:description" content="There were only 200 of them, and after the lines were drawn there were none. An interactive piece on a village erased by shifting borders in the south of Lebanon.">
+    <meta name="twitter:image:src" content="http://www.knoozroom.com/v3/images/borders/tale/fence.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Tale of a Lost Village - KnoozRoom" />
+    <meta property="og:url" content="http://www.knoozroom.com/" />
+    <meta property="og:image" content="http://knoozroom.com/v3/images/borders/tale/fence.jpg" />
+    <meta property="og:description" content="There were only 200 of them, and after the lines were drawn there were none. An interactive piece on a village erased by shifting borders in the south of Lebanon." />
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div id="kr-nav" class="row">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://knoozroom.com">
+                        <img id="logo" alt="KnoozRoom" src="images/logo.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="active"><a id="nav-home" href="#">HOME</a>
+                        </li>
+                        <li><a id="nav-projects">Beauty Shop Talk</a>
+                        </li>
+                        <li><a id="nav-about">Where Nomads Don't Roam</a>
+                        </li>
+
+                        <li>
+                            <a href="http://facebook.com/knoozroom" target="_blank"> <i class="icon-facebook"></i> 
+                            </a>
+                        </li>
+                        <li><a href="http://twitter.com/knoozroom"><i class="icon-twitter"></i>  </a>
+                        </li>
+                        <li><a data-toggle="modal" data-target="#subscribe" href="#"><i class="icon-mail-alt"></i>  </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div id="kr-menu"></div>
+
+        <div id="tale-cover" class="row">
+            <div class="col-md-12">
+                <span class="cover-title">
+                    <span class="sub-title">Borders - Part I</span>
+                    <br>
+                    <span class="main-title">Tale of a Lost Village</span>
+                </span>
+                <video autoplay="autoplay" id="fence" loop poster="videos/fence-poster.jpg">
+                    <source src="videos/fence.mp4" type="video/mp4">
+                        <source src="videos/fence.ogg" type="video/ogg">
+                            <source src="videos/fence.webm" type="video/webm">
+                </video>
+            </div>
+        </div>
+        <!-- tale-cover -->
+
+        <div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" aria-labelledby="map" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+
+
+                    <div class="modal-body">
+
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                     Original Sykes-Picot Map - Move mouse over to zoom
+                                    </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="easyzoom easyzoom--overlay">
+                                                    <a href="images/borders/tale/map-original-sykes-picot.jpg">
+                                                        <img alt="original map of sykes picot" src="images/borders/tale/map-original-sykes-picot.jpg" id="easyzoom-default">
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <ul>
+                                                    <li>Blue - French influence</li>
+                                                    <li>Red - British influence</li>
+                                                    <li>Green - Russian influence</li>
+
+                                            </div>
+                                            <div class="col-md-1"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Sykes-Picot Map overlayed with current borders
+                                    </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <div id="maps-over" class="imageReveal">
+                                               
+                                                <img alt="original map of sykes picot" src="images/borders/tale/map-original-sykes-picot.jpg"  title="slide to see map">
+
+
+                                                 <img alt="illustrated map of sykes picot" src="images/borders/tale/map-illustrated-sykes-picot.jpg">
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <section id="teaser" class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h4 id="catch-line">
+                    <em>There were only 200 of them, and after the lines were drawn there were none.</em>
+                </h4>
+            </div>
+            <div class="col-md-1"></div>
+        </section>
+
+        <section id="intro">
+            <div class="row">
+                <div class="col-md-1"></div>
+
+                <div class="col-md-6">
+                    <p>
+                        <span class="dropcap">T</span>he village folk of Abil al-Qamh (آبل القمح) tended to a land rich in wheat and history. A church and a mosque stood amid mud and stone houses, while ancient ruins from as early as 2900 BC lay nearby. The village was nestled between a vibrant network of Christian, Sunni and Shia villages, three km south of the Litani river and 40 km north of the Sea of Galilee. The mountain region of Jabal ‘Amil separated it from the waves of the Mediterranean that lapped against the sands of the ancient city of Tyre.</p>
+
+                    <p>We interviewed the son of one of the villagers. Atef Choufani, 57, spent most of his life following a relentless current of displacement because a minute change in a border frontier rendered his hometown an overgrowth of grass and trees.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <img class="img-responsive" alt="abil el qamh village in south lebanon" src="images/borders/tale/abil-el-qamh-broders.jpg">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="mini">
+                                <em>The settlement of Yuval lies on the land of Abil el-Qamh, where our story unfolds.</em> <a href="http://goo.gl/ba2dkB" target="_blank"><i class="icon-location"> </i></a> 
+                                <a href="https://en.wikipedia.org/wiki/Abil_al-Qamh" target="_blank"> <i class="icon-wikipedia"> </i> 
+                                </a>
+                                <a href="http://goo.gl/k5V3Cw" target="_blank"> <i class="icon-picture"> </i> 
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <p>It starts with a French and British diplomat. In 1916, Sir
+                        <span class="tooltip-classic tooltip-classic-effect-4">
+                            <span class="tooltip-classic-item">Mark Sykes</span>
+                            <span class="tooltip-classic-content clearfix">
+                                <img alt="Mark Sykes" src="images/borders/tale/mark-sykes.jpg" />
+                                <span class="tooltip-classic-text">
+                                    <strong>Mark Sykes (1879 – 1919)</strong>an English traveller, Conservative Party politician and diplomatic adviser, particularly with regard to the Middle East at the time of the First World War. Evidence suggests that Sykes had a hand in promoting the Balfour Declaration issued on 2 November 1917. He would, however, later write to Faisal I of Iraq in which he expressed this view of the Jews: "... this race, despised and weak, is universal and all powerful and cannot be put down." <a href="https://en.wikipedia.org/wiki/Mark_Sykes" target="_blank">Wikipedia</a>
+                                </span>
+                            </span>
+                        </span>
+                        and
+
+                        <span class="tooltip-classic tooltip-classic-effect-4">
+                            <span class="tooltip-classic-item">François Georges Picot</span>
+                            <span class="tooltip-classic-content clearfix">
+                                <img alt="François Georges Picot" src="images/borders/tale/Francois-Georges-Picot.jpg" />
+                                <span class="tooltip-classic-text">
+                                    <strong>François Georges Picot (1870 – 1951)</strong>a French diplomat who signed the Sykes–Picot Agreement during World War I, with the Englishman, Sir Mark Sykes, dividing up the Ottoman Empire into British, French and, later, Russian and Italian spheres of influence. He was responsible along with Sykes for the annexation of Arab lands and their incorporation into British and French empires. <a href="https://en.wikipedia.org/wiki/Fran%C3%A7ois_Georges-Picot" target="_blank">Wikipedia</a>
+                                </span>
+                            </span>
+                        </span>
+                        set plans in motion for consulates in the region to divide the soon to be destroyed Ottoman empire into colonial mandates. Officials gathered in the back-rooms of their Middle Eastern offices, armed with rulers, pencils and paper, and gave birth to nation-states that would be made from the same mold as the colonies. Those fateful markings on the page were the product of a whirlwind of negotiations.</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+        </section>
+
+
+
+
+        <section class="module parallax parallax-1 row-fluid">
+            <div id="churchill-quote" class="row">
+                <div class="col-md-1"></div>
+                <div class="well col-md-3 ">
+                    <p>Winston Churchill used to boast that in 1921 he created the British mandate of Transjordan
+                        <span class="quote-text">
+                            <span class="quote">“</span>with the stroke of a pen, one Sunday afternoon in Cairo.
+                            <span class="quote">”</span>
+                        </span>
+                    </p>
+                </div>
+
+                <div class="well col-md-3">
+
+                    <p>
+                        <span class="quote-text">
+                            <span class="quote">“</span>I had a well-spent morning at the office making out the southern desert frontier of the Iraq,
+                            <span class="quote">”</span>
+                        </span>Diplomat, archeologist and spy Gertrude Bell wrote to her father on Dec 4 1921</p>
+                </div>
+
+                <div class="well col-md-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="thumbnail">
+                                <a href="#" data-toggle="modal" data-target=".bs-modal-lg">
+                                    <img alt="Original Sykes Picot Agreement Map signed 8 May 1916" src="images/borders/tale/signed-map-sykes-picot.jpg">
+                                </a>
+                                <div class="caption">
+                                    <em>Original Sykes Picot Agreement Map signed 8 May 1916. Click for interactive version</em>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-1"></div>
+
+
+            </div>
+        </section>
+
+
+
+        <section id="agreement">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-9">
+                    <p>But the agreement would forever be stored in popular memory as deception of monumental proportions. To the Arab world, the secret agreement that demarcated Arab states embodied the duplicitous face of imperialist designs on the region. For the Europeans cooked up the Sykes-Picot agreement at a time when the British promised Arabs a unified and independent existence in a famous series of letters known as the Hussein-McMahon correspondence.</p>
+
+
+                    <p>Sir Henry McMahon, the British High Commissioner in Egypt had promised King Hussein of the Hejaz Arab sovereignty over a territory bounded by the southern border of Turkey in the North, in the East by Persia and the Persian Gulf, in the West by the Mediterranean Sea, and in the south by the Arabian Sea. This would be granted in exchange for Hussein's help in dismantling Ottoman rule over the region.</p>
+
+                </div>
+
+                <div class="col-md-2">
+
+                    <div id="carousel-personnas" class="carousel slide" data-ride="carousel" data-interval="false">
+
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+
+
+                            <div class="item active">
+                                <img src="images/borders/tale/Feisal-at-Versailles.jpg" alt="Prince Feisal at versaille">
+                                <div class="carousel-caption">
+                                    Prince Feisal at Versaille
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="images/borders/tale/churchill.jpg" alt="Churchill">
+                                <div class="carousel-caption">
+                                    Winston Churchill
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <img src="images/borders/tale/Gertrude-Bell.jpg" alt="Prince Feisal at versaille">
+                                <div class="carousel-caption">
+                                    Gertrude Bell
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="images/borders/tale/hussain.jpg" alt="Prince Feisal at versaille">
+                                <div class="carousel-caption">
+                                    Husayn bin Ali, Sharif of Mecca
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="images/borders/tale/mc-mahon.jpg" alt="Prince Feisal at versaille">
+                                <div class="carousel-caption">
+                                    Sir Henry McMahon
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-personnas" role="button" data-slide="prev">
+                            <i class="icon-left-circle"> </i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-personnas" role="button" data-slide="next">
+                            <i class="icon-right-circle"> </i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+
+                    <p>Prince Faisal, son of Hussein, foretold the betrayal and unsuccessfully fought for the independence of a united "Greater Syria", which included Iraq, Palestine, Syria and Transjordan. The San Remo conference of 1920 carved out Syria as a French mandate, so that inhabitants of the region were subject to either French or British rule, and by the 1940s, to states bound by these spheres of influence.</p>
+
+                    <p>The Peace of Westphalia (1648) that ended the Thirty Years’ War in The Holy Roman Empire, created European nation-states on the basis of political self-determination.</p>
+
+                    <p>But the newly born Arab nation-states, which the European diplomats may have seen as a natural byproduct of disintegrated empire, coincided primarily with foreign geopolitical interest. Border crossings and the red tape associated with them constrained age-old trade routes, train networks, and familial ties. In some territories, a single brushstroke on the map would render swathes of fertile and culturally significant lands off-limits to the Arab world.
+
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+        </section>
+
+        <section id="illustrative-vid">
+            <div class="row">
+                <div class="col-md-12">
+                    <em id="illustrative-vid-text">This video displays footage collected during KnoozRoom's trip across Lebanon's southern frontier, starting at the coastal border town of Naqoura through the war-ridden city of Bint Jbeil and ending at Fatima's gate, the former Lebanon-Palestine border crossing. The scenes with the pen and paper mirror our imagination of the border-creation process and alludes to the disconnect between this setting and the landscape it deals with.</em>
+
+                    <video autoplay="autoplay" id="drawing-borders" loop poster="videos/landscape.jpg">
+                        <source src="videos/landscape.mp4" type="video/mp4">
+                            <source src="videos/landscape.ogg" type="video/ogg">
+                                <source src="videos/landscape.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+
+            
+        </section>
+
+
+        <section>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <p>On a Spring morning in 1922, inhabitants of Qabil al-Amh were handed identity cards by the French census stating that they were Lebanese citizens.</p>
+
+                    <p>Meanwhile, Zionist forces who were setting the stage for a state of their own in historic Palestine, were eyeing the Litani and Hasbani rivers that were placed squarely in French mandate Lebanon. They petitioned to move the border to capture the water resources. After six years of negotiations, British delegate, Lieutenant Colonel Stuart Newcombe and his French counterpart Lieutenant Colonel N. Paulet designed a frontier that was considered a compromise between French demands that numerous Shia villages in the region remain within the same territory, and British sympathies with Zionist aspirations.</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </section>
+
+
+        <section id="scrolly-map">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div id="cbp-fbscroller" class="cbp-fbscroller">
+                        <section id="fbsection1">
+
+                        </section>
+                        <section id="fbsection2">
+                            <strong>Zionist proposal to Versailles Conference, 1919:</strong>
+                            <p>Zionists setting the stage for a Jewish state in Palestine petition for the northern Palestine boundary to fall just before Sidon.</p>
+                            <p>Sykes and Picot had set the border in a way that adhered to the biblical interpretation of Palestine as Dan to Bir Seba’, but Zionists contended that such a territory would not grant it vital resources offered by rivers in territory given to Lebanon.</p>
+                        </section>
+                        <section id="fbsection3">
+                            <strong>Meinertzhage Line, 1919:</strong>
+                            <p>While the French insisted on sticking to the Sykes-Picot line, the British were keen on giving the Zionists access to the Litani (the longest river inside modern day Lebanon).</p>
+                            <p>The Meinertzhagen Line was also considered to fulfill Britain’s security requirements. France, on the other hand, argued that “historical and natural” boundaries of “Greater Lebanon” should include the water sources enclosed by the Sykes-Picot line.</p>
+                        </section>
+                        <section id="fbsection4">
+                            <strong>Newcombe-Paulet/modern day boundary of south Lebanon (7 March 1923):</strong>
+                            <p>A commission tasked with resolving the French-British-Zionist border dispute draws the final demarcation line, which is seen to cause minimal disruptions to local community and incorporate some Zionist aspirations. It captures part of the Hasbani river.</p>
+                            <p>Twenty-four villages that were granted Lebanese citizenship in the French census of 1922 are now part of the British mandate of Palestine.</p>
+                        </section>
+
+                        <section id="fbsection5">
+                            <strong>Newcombe-Paulet/modern day boundary of south Lebanon (7 March 1923):</strong>
+                            <p>A commission tasked with resolving the French-British-Zionist border dispute draws the final demarcation line, which is seen to cause minimal disruptions to local community and incorporate some Zionist aspirations. It captures part of the Hasbani river.</p>
+                            <p>Twenty-four villages that were granted Lebanese citizenship in the French census of 1922 are now part of the British mandate of Palestine.</p>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="post-map">
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <p>The village folk of Abil al-Qamh, as well as those of 23 other villages, were transformed from Lebanese to Palestinian citizens nearly overnight. The encroaching boundary now included parts of the two rivers.</p>
+                    <p>But the national metamorphosis would not come to affect the village folk for another 26 years. They continued to roam the mountainous terrain cradled by the coveted rivers unabated, trading and marrying between their network of villages. The border still had no physical reflection.</p>
+
+
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <p>Atef Choufani’s father married from the mountainside town of Deir Mimas, placed safely inside the French mandate of Lebanon. Its cobblestoned streets, winding alleyways, its dozen convents draped the slope of a large hill.</p>
+                    <p>When he looks back at this with modern nation-state informed hindsight, Atef claims his mother had a more typically Palestinian accent than his father, who sounded more Lebanese, with less stress on his Qs and a more nasally, or slanted use of vowels.</p>
+
+                    <p>Atef believes that this stems from the arrangement of trade and social networks in the region where cultural, economic and religious ties often over-rided geographic proximity. Abil al-Qamh inhabitants were more likely to associate with communities further north, while Deir Mimas looked to the South for marriage and trade.</p>
+
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="img-responsive" alt="mimas" src="images/borders/tale/mimas.jpg">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <em>Deir Mimas, July 2013. 7pm, facing West.</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="refugees" class="row">
+            <div class="col-md-12">
+                <div class="img-holder" data-cover-ratio="0.7" data-image="images/borders/tale/dbayeh.jpg"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <p>When Zionist militias forcibly depopulated Choufani's hometown to lay claim to most of mandate Palestine, the Lebanese government would not assent to his stay in Deir Mimas. In 1962, Atef Choufani’s family would become refugees twice over. First, from their town of Abil al-Qamh by Israel’s Operation Yiftach, which decimated the indigenous population of the village's district from 10,000 to a paltry 100. Second, from their social and cultural linkages of villages south of the Litani river by a Lebanese government that paid heed to the erratic southern boundary. They were moved north to the Lebanese mountain city of Nabatiyeh. “They told us we were refugees and so we had to follow the rest of the people from our village,” Atef recalls.</p>
+                    <p>
+
+                        But the then over-populated Nabatiyeh was just a pit-stop. A year later, the government hauled the family and their village-folk into the Dbayeh refugee camp in northern Beirut.</p>
+                    <p>
+
+                        “At first, we stayed in [nearby neighborhood] Sin el-Fil. It seems our parents were trying to avoid ending up in the camp, but we found that we couldn’t afford this.”</p>
+                    <p>
+
+                        They gave in to the relentless current of their accidental refugee-hood and moved into the camp, where Atef would spend the larger part of his young adult years.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <p>The family lived under corrugated roofs, which made the summers hotter and the winters colder, and the rattling of the raindrops against the metal roof made a good night’s sleep hard to come by. They had no private bathrooms, and an open sewage system meant that, after a rainy night, a trip to school involved trudging through human waste.</p>
+                    <p>
+
+                        In 1975, Lebanon plunged into a bloody civil war that would pit right-wing Christians against a predominantly Muslim left-wing coalition of militias which included the Palestinian Liberation Organization (PLO). Dbayeh’s refugee camp consisted of the only Palestinian population center in the Christian enclave of north Beirut. A bloody battle ensued to expel them from the area.</p>
+                    <p>
+
+                        Seventy Palestinians in the mostly Christian camp were killed in what many described as a massacre that involved the summary execution of children. The camp fell, and the twice or thrice refugees were left to seek shelter once again.</p>
+                </div>
+                <div id="mapcycling" class="col-md-4"></div>
+                <div class="col-md-1"></div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+
+                <p>Atef and his family escaped into the protection of the PLO’s war-time allies in Western Beirut, and managed to win a scholarship at the American University of Beirut. He pursued his studies in engineering, one of the professions barred to Palestinians in Lebanon, guaranteeing his eventual departure from the country. From Beirut, he was shuttled again to Abu Dhabi, the only place in the Gulf that received Palestinian refugees. “I knew I didn’t want to stay in Lebanon. I needed to be able to support my family. So I knew there was absolutely no way I would stay,” said Atef.</p>
+                <p>
+
+                    The business he worked for, the Consolidated Contractor’s Company (CCC), was founded by Palestinian refugees Hasib Sabbagh, Said Khoury, and Kamil ‘Abd al-Rahman. It is considered the patron of the Palestinian community in the city of its headquarters, Athens, Greece. Atef was soon transferred to CCC’s base in Greece, where he married a Palestinian woman from Nablus and taught his children about the Palestinian struggle from an early age.</p>
+                <p>
+
+                    “I consider myself to be from the Greater Syria,” said Atef referring to the land King Faisal bin Hussein presided over for four months in 1920 before being defeated by the French. Greater Syria is also the territory the majority of those surveyed in mandate-era Eastern Mediterranean Arab states expressed they wanted to adhere to in a survey dispatched by America’s Woodrow Wilson in 1919. “In the end, I know that the states were divided by not much more than simple lines,” he added.</p>
+
+
+                <h1>Full Circle</h1>
+
+
+                <p>
+                    The simple line of Paulet-Newcombe would again be employed as a geopolitical bargaining chip, though this time by local players. Throughout the 1980s and early 1990s, the powerful Shia parties of Amal and Hezbollah drew the public’s attention to the deviations from the armistice lines of 1920 that led to current boundaries. Seven predominantly Shia villages were unjustly robbed from a south Lebanon peopled by their co-religionists, party representatives argued. The mixed Shia-Christian village of Qabil el-Amh was one of these.</p>
+                <p>
+
+                    In 1994, Lebanon laid de facto claim to the seven villages (قرى السبع), granting the former inhabitants and their descendants Lebanese nationality. It was seen as a testament to the rising power of the Shia parties, especially since the remaining non-Shia 16 villages left behind by the 1923 deviations were excluded from the territorial claim.</p>
+                <p>
+
+                    Atef was able to dispose of his refugee travel documents that jerked him from place to place throughout most of his life, in exchange for citizenship. He is no longer a non-citizen of Palestine, but he also does not identify as Lebanese. He owes this, he says, to his formative years in the refugee camp in Dbayeh.</p>
+                <p>
+
+                    More than a country carved out on a map, more than a village wedged between, and later destroyed, by indecisive borders, Palestine for Atef transcends the physical realm. It represents a struggle against the dispossession of 700,000 Palestinians by the state of Israel, and the continued occupation of millions in the West Bank and Gaza.</p>
+                <p>
+
+                    “Palestine is larger than the village. It is a cause and it is a just cause. That’s what Palestine is to me.”
+                </p>
+
+            </div>
+            <div class="col-md-1"></div>
+        </section>
+
+
+        <section id="footer" class="row">
+            <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-2">
+                
+                    <a href="http://lb.boell.org/" target="_blank">
+                        <img class="center-block img-responsive" alt="heinrich boll stiftung" src="images/sponsors/heinrich-boll-stiftung.jpg">
+                    </a>
+                
+
+              
+            </div>
+             <div class="col-md-5"></div>
+         </div>
+         <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                  <p>This series has been produced with the financial assistance of the Heinrich Böll Stiftung - Middle East Office. The views expressed herein are those of the author(s) and can therefore in no way be taken to reflect the opinion of the Foundation.</p>
+            </div>
+            <div class="col-md-1"></div>
+         </div>
+        </section>
+
+
+
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.imageReveal.min.js"></script>
+    <script src="js/easyzoom.js"></script>
+    <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+
+    <script src="js/tale-of-a-lost-village.js"></script>
+
+
+</body>
+
+</html>

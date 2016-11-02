@@ -1,0 +1,120 @@
+.tooltip-classic {
+	display: inline;
+	position: relative;
+	z-index: 999;
+}
+
+/* Trigger text */
+
+.tooltip-classic-item {
+	background: rgba(236,219 ,204,1);
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+/* Gap filler */
+
+.tooltip-classic-item::after {
+	content: '';
+	position: absolute;
+	width: 360px;
+	height: 20px;
+	bottom: 100%;
+	left: 50%;
+	pointer-events: none;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.tooltip-classic:hover .tooltip-classic-item::after {
+	pointer-events: auto;
+}
+
+/* tooltip-classic */
+
+.tooltip-classic-content {
+	position: absolute;
+	z-index: 9999;
+	width: 360px;
+	left: 50%;
+	margin: 0 0 20px -180px;
+	bottom: 100%;
+	text-align: left;
+	line-height: 1.4;
+	box-shadow: -5px -5px 15px rgba(48,54,61,0.2);
+	background: #ECDBCC;
+	opacity: 0;
+	cursor: default;
+	pointer-events: none;
+}
+
+ 
+
+.tooltip-classic-effect-4 .tooltip-classic-content {
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transform: scale3d(0.7,0.3,1);
+	transform: scale3d(0.7,0.3,1);
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+}
+
+ 
+.tooltip-classic:hover .tooltip-classic-content {
+	pointer-events: auto;
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+	transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+}
+
+.tooltip-classic.tooltip-classic-effect-2:hover .tooltip-classic-content {
+	-webkit-transform: perspective(1000px) rotate3d(1,0,0,0deg);
+	transform: perspective(1000px) rotate3d(1,0,0,0deg);
+}
+
+/* Arrow */
+
+.tooltip-classic-content::after {
+	content: '';
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: transparent;
+	border-top-color: #2a3035;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+/* tooltip-classic content*/
+
+.tooltip-classic-content img {
+	position: relative;
+	height: 170px;
+	display: block;
+	float: left;
+	margin-right: 1em;
+}
+
+.tooltip-classic-text {
+	font-size: 0.9em;
+	line-height: 1.35;
+	display: block;
+	padding: 1.31em 1.21em 1.21em 1.2em;
+	color: #000;
+}
+
+
+
+.tooltip-classic-effect-5 .tooltip-classic-text {
+	padding: 1.4em;
+}
+
+.tooltip-classic-text a {
+	color: #5B486F;
+	text-decoration: none;
+}
